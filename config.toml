@@ -2,15 +2,21 @@
 base_url = "http://civkit.org"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
+compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-[markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+theme = "juice"
 
 [extra]
-# Put all your custom variables here
+# Put all your custom variables herea
+juice_logo_name = "Civkit"
+juice_logo_path = "hachiko-logo.svg"
+juice_extra_menu = [
+    { title = "Discord", link = "https://discord.com/invite/pKtNhMTcMC" },
+    { title = "Twitter", link = "https://twitter.com/thecivkit" },
+    { title = "Github", link = "https://github.com/civkit"}
+]
+
+repository_url = "https://github.com/civkit"

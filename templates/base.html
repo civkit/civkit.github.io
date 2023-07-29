@@ -1,0 +1,22 @@
+{% extends "juice/templates/index.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=DM Mono"/>
+{% endblock head %}
+
+{% block favicon %}
+    <link rel="icon" href="/hachiko-logo.ico">
+{% endblock favicon %}
+
+{% block footer %}
+<footer>
+    <small class="subtext" style="float;">
+      @ <script>
+        const currentYear = new Date().getFullYear();
+        document.write(currentYear);
+      </script> CivKit Org
+    </small>
+  </footer>
+{% endblock footer %}
