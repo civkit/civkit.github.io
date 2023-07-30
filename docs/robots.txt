@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: http://civkit.org/sitemap.xml
+Sitemap: https://civkit.github.io.git/sitemap.xml
