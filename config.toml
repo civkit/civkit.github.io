@@ -9,6 +9,8 @@ build_search_index = false
 
 theme = "juice"
 
+output_dir = "docs"
+
 [extra]
 # Put all your custom variables herea
 juice_logo_name = "Civkit"
