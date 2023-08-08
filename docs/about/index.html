@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About |  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" href="/hachiko-logo.ico">
+
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #ff7f0a;
+        /* Primary theme text color */
+        --primary-text-color: #ffffff;
+
+        --secondary-color: #0dffa8;
+        --secondary-text-color: #0b0a0a;
+
+         /* Highlight text color of table of content */
+         --toc-highlight-text-color: #0f0802;
+
+        --code-color: #000000;
+        --code-background-color: rgb(20, 168, 209);
+    }
+</style>
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://civkit.github.io/juice.css">
+    
+<link rel="stylesheet" href="https://civkit.github.io/style.css"/>
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=DM Mono"/>
+
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="https://civkit.github.io/">
+    <div class="logo">
+        <img src="https://civkit.github.io/hachiko-logo.svg" alt="logo">
+        Civkit
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="https://civkit.github.io/about/">About</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://discord.com/invite/pKtNhMTcMC">Discord</a>
+        
+        <a class="nav-item subtitle-text" href="https://twitter.com/thecivkit">Twitter</a>
+        
+        <a class="nav-item subtitle-text" href="https://github.com/civkit">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">Civkit About</div>
+<p>CivKit is an open-source project which maintains and releases CivKit node client
+and associated softwares. The project is carried out with utmost transparency. Each
+development decision is open to public discussion. Anyone is free to propose code
+changes and to test, review and comment open pull request. The CivKit project
+is committed to the highest degree of decentralization both in network design
+and code development.</p>
+<p>The technical philosophy of the project is driven to protect the security, safety
+and privacy of the CivKit users.</p>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+<footer>
+    <small class="subtext" style="float;">
+      @ <script>
+        const currentYear = new Date().getFullYear();
+        document.write(currentYear);
+      </script> CivKit Developers
+    </small>
+  </footer>
+
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>
