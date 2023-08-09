@@ -1,8 +1,5 @@
 {% extends "base.html" %}
 
-
-
-
 {% block header %}
 <header class="header">
   {{ macros::render_header() }}
@@ -10,30 +7,30 @@
 
 {% block hero %}
 <div class = "hero" style="position: relative;">
-<section class ="text-center" style="color:#fff;">
-    <h1 class="heading-text">
-        A P2P Electronic Free Market 
-    </h1>
-    <h3 class="text-center title-text">
-        The Civ Kit is a blueprint to build their own censorship-resistant and permissionless 
-        global marketplace. Armed with the design of Nostr and the architecture of the Lightning Network, 
-        the framework prioritizes privacy and security through escrowed trades, moderations, 
-        and know-your-peer (KYP) oracles. 
-        The Civ Kit can be made and expanded to support any kind of trading.
-    </h3>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100px;">
-        <a href="https://github.com/civkit/paper/blob/main/civ_kit_paper.pdf" >
-            <button style="font-size: 20px; padding: 15px 30px;">Download White Paper</button>
-        </a>
+    <section class ="text-center" style="color:#fff;">
+        <h1 class="heading-text">
+            A P2P Electronic Free Market 
+        </h1>
+        <h3 class="text-center title-text">
+            The Civ Kit is a blueprint to build their own censorship-resistant and permissionless 
+            global marketplace. Armed with the design of Nostr and the architecture of the Lightning Network, 
+            the framework prioritizes privacy and security through escrowed trades, moderations, 
+            and know-your-peer (KYP) oracles. 
+            The Civ Kit can be made and expanded to support any kind of trading.
+        </h3>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100px;">
+            <a href="https://github.com/civkit/paper/blob/main/civ_kit_paper.pdf" >
+                <button style="font-size: 20px; padding: 15px 30px;">Download White Paper</button>
+            </a>
+        </div>
+    </section>
+
+    <img class="hero-image" style="width: 110%" src="{{ get_url(path="hachiko-logo.svg") }}"/>
+
+    <div class="explore-more text"
+        onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+        Explore More ⇩
     </div>
-</section>
-
-<img class="hero-image" style="width: 110%" src="{{ get_url(path="hachiko-logo.svg") }}"/>
-
-<div class="explore-more text"
-    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
-    Explore More ⇩
-</div>
 </div>
 
 <style>
@@ -51,8 +48,6 @@
     }
 </style>
 {% endblock hero %}
-
-
 
 {% endblock header %}
 
