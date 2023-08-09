@@ -1,8 +1,17 @@
 {% extends "base.html" %}
 
+
+
+
+{% block header %}
+<header class="header">
+  {{ macros::render_header() }}
+</header>
+
 {% block hero %}
-<section style="padding:10px; max-width: 500px; color:#fff;">
-    <h1 class="text-center heading-text">
+<div class = "hero" style="position: relative;">
+<section class ="text-center" style="color:#fff;">
+    <h1 class="heading-text">
         A P2P Electronic Free Market 
     </h1>
     <h3 class="text-center title-text">
@@ -18,12 +27,36 @@
         </a>
     </div>
 </section>
-<div>
-    <img class="hero-image" style="width: 110%" src="{{ get_url(path="hachiko-logo.svg") }}"/>
-</div>
+
+<img class="hero-image" style="width: 110%" src="{{ get_url(path="hachiko-logo.svg") }}"/>
 
 <div class="explore-more text"
     onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
     Explore More ⇩
 </div>
+</div>
+
+<style>
+    .hero section {
+        padding: 0 5rem;
+    }
+    @media screen and (max-width: 768px) {
+        .hero section {
+            padding: 0 2rem;
+        }
+
+        .hero-image {
+            display: none
+        }
+    }
+</style>
 {% endblock hero %}
+
+
+
+{% endblock header %}
+
+
+
+
+
