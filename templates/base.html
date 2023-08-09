@@ -6,6 +6,12 @@
           href="https://fonts.googleapis.com/css?family=DM Mono"/>
 {% endblock head %}
 
+{% block header %}
+<header class="header">
+  {{ macros::render_header() }}
+</header>
+{% endblock header %}
+
 {% block favicon %}
     <link rel="icon" href="/hachiko-logo.ico">
 {% endblock favicon %}

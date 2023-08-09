@@ -40,9 +40,8 @@
 
 <body>
     
-
-    <header class="pos-absolute" style="background-color: transparent">
-        
+<header class="header">
+  
 
 <a href="https://civkit.github.io/">
     <div class="logo">
@@ -69,12 +68,12 @@
     
 </nav>
 
-    </header>
+</header>
 
-    <div class="hero">
-        
-<section style="padding:10px; max-width: 500px; color:#fff;">
-    <h1 class="text-center heading-text">
+
+<div class = "hero" style="position: relative;">
+<section class ="text-center" style="color:#fff;">
+    <h1 class="heading-text">
         A P2P Electronic Free Market 
     </h1>
     <h3 class="text-center title-text">
@@ -90,18 +89,34 @@
         </a>
     </div>
 </section>
-<div>
-    <img class="hero-image" style="width: 110%" src="https://civkit.github.io/hachiko-logo.svg"/>
-</div>
+
+<img class="hero-image" style="width: 110%" src="https://civkit.github.io/hachiko-logo.svg"/>
 
 <div class="explore-more text"
     onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
     Explore More ⇩
 </div>
+</div>
 
-    </div>
+<style>
+    .hero section {
+        padding: 0 5rem;
+    }
+    @media screen and (max-width: 768px) {
+        .hero section {
+            padding: 0 2rem;
+        }
 
-    
+        .hero-image {
+            display: none
+        }
+    }
+</style>
+
+
+
+
+
 
     <main>
         
