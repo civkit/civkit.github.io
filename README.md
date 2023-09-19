@@ -21,6 +21,12 @@ zola serve
 
 Then open the <http://127.0.0.1:1111> URL to view the site.
 
+To deploy
+
+```bash
+zola build
+```
+
 ## Administration tasks
 
 Administration tasks are being provided as convenience in a `justfile`.
