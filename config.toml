@@ -16,7 +16,7 @@ output_dir = "docs"
 juice_logo_name = "Civkit"
 juice_logo_path = "hachiko-logo.svg"
 juice_extra_menu = [
-    { title = "Discord", link = "https://discord.com/invite/pKtNhMTcMC" },
+    { title = "Telegram", link = "https://t.me/civkittv" },
     { title = "Twitter", link = "https://twitter.com/thecivkit" },
     { title = "Github", link = "https://github.com/civkit"}
 ]
