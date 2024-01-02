@@ -11,6 +11,6 @@ The Civ Kit combines the Nostr architecture with the Lightning Network, prioriti
 
 The CivKit Node represents an experimental NIP-01 Rust relay, complemented by ongoing development of communication gateways for BOLT8 Noise transport and BOLT4 sphinx onion routing. Alongside this, there is a companion client binary designed specifically for development and testing purposes.
 
-## Orage
+## Staking Credentials
 
-Orage lightning node, is constructed in LDK, will offer in-built features such as custom scripts. These scripts will provide greater flexibility in the types of applications that can be built on the Lightning Network. The ultimate goal is to encourage the development of more 'Lightning-aware' applications. The integration of custom scripts, escrow, Discreet Log Contracts (DLCs), and Taproot will collectively facilitate this ambition.
+Rust-based framework implements a reputation system aimed at enhancing the resilience of the Lightning Network against channel jamming. Central to this system is the innovative use of "credentials" issued by network routing hops, attached to each Hashed Time-Locked Contract (HTLC) forward request. These credentials are crucial for a reputation algorithm that rewards or penalizes payment senders, promoting efficient channel liquidity management. 

@@ -72,30 +72,30 @@
 
 
 <div class = "hero" style="position: relative;">
-<section class ="text-center" style="color:#fff;">
-    <h1 class="heading-text">
-        A P2P Electronic Free Market 
-    </h1>
-    <h3 class="text-center title-text">
-        The Civ Kit is a blueprint to build their own censorship-resistant and permissionless 
-        global marketplace. Armed with the design of Nostr and the architecture of the Lightning Network, 
-        the framework prioritizes privacy and security through escrowed trades, moderations, 
-        and know-your-peer (KYP) oracles. 
-        The Civ Kit can be made and expanded to support any kind of trading.
-    </h3>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100px;">
-        <a href="https://github.com/civkit/paper/blob/main/civ_kit_paper.pdf" >
-            <button style="font-size: 20px; padding: 15px 30px;">Download White Paper</button>
-        </a>
+    <section class ="text-center" style="color:#fff;">
+        <h1 class="heading-text">
+            A P2P Electronic Free Market 
+        </h1>
+        <h3 class="text-center title-text">
+            The Civ Kit is a blueprint to build their own censorship-resistant and permissionless 
+            global marketplace. Armed with the design of Nostr and the architecture of the Lightning Network, 
+            the framework prioritizes privacy and security through escrowed trades, moderations, 
+            and know-your-peer (KYP) oracles. 
+            The Civ Kit can be made and expanded to support any kind of trading.
+        </h3>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100px;">
+            <a href="https://github.com/civkit/paper/blob/main/civ_kit_paper.pdf" >
+                <button style="font-size: 20px; padding: 15px 30px;">Download White Paper</button>
+            </a>
+        </div>
+    </section>
+
+    <img class="hero-image" style="width: 110%" src="https://civkit.github.io/hachiko-logo.svg"/>
+
+    <div class="explore-more text"
+        onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+        Explore More ⇩
     </div>
-</section>
-
-<img class="hero-image" style="width: 110%" src="https://civkit.github.io/hachiko-logo.svg"/>
-
-<div class="explore-more text"
-    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
-    Explore More ⇩
-</div>
 </div>
 
 <style>
@@ -112,8 +112,6 @@
         }
     }
 </style>
-
-
 
 
 
@@ -137,7 +135,7 @@
                 </div>
                 
                 <div class="toc-item-child">
-                    <a class="subtext" href="https://civkit.github.io/#orage"><small>- Orage</small></a>
+                    <a class="subtext" href="https://civkit.github.io/#staking-credentials"><small>- Staking Credentials</small></a>
                 </div>
                 
                 
@@ -154,8 +152,8 @@
 <p>The Civ Kit combines the Nostr architecture with the Lightning Network, prioritizing “privacy and security through escrowed trades, decentralized identity, moderation, a P2P messaging protocol, and know-your-peer (KYP) oracles for adjudication,” The system aims to support all kinds of trading, including goods and services.</p>
 <h2 id="civkit-node">Civkit Node</h2>
 <p>The CivKit Node represents an experimental NIP-01 Rust relay, complemented by ongoing development of communication gateways for BOLT8 Noise transport and BOLT4 sphinx onion routing. Alongside this, there is a companion client binary designed specifically for development and testing purposes.</p>
-<h2 id="Staking Credentials">Orage</h2>
-<p>This is a Rust-based framework implements a reputation system aimed at enhancing the resilience of the Lightning Network against channel jamming. Central to this system is the innovative use of "credentials" issued by network routing hops, attached to each Hashed Time-Locked Contract (HTLC) forward request. These credentials are crucial for a reputation algorithm that rewards or penalizes payment senders, promoting efficient channel liquidity management. The system begins with a bootstrap phase involving one-time upfront fees, with subsequent credential distribution evolving based on HTLC traffic. This approach facilitates dynamic HTLC traffic shaping, offering solutions to both malicious and spontaneous jamming. Initially, this framework will be employed to mitigate counterparty risk in Bitcoin financial contracts and to redeem services from paid Nostr relays, such as a CivKit functionary node. The implementation focuses on high-level privacy, user transparency, and network adaptability, contributing to a more robust, flexible, and efficient Lightning Network through a transparent and privacy-preserving reputation mechanism.</p>
+<h2 id="staking-credentials">Staking Credentials</h2>
+<p>Rust-based framework implements a reputation system aimed at enhancing the resilience of the Lightning Network against channel jamming. Central to this system is the innovative use of &quot;credentials&quot; issued by network routing hops, attached to each Hashed Time-Locked Contract (HTLC) forward request. These credentials are crucial for a reputation algorithm that rewards or penalizes payment senders, promoting efficient channel liquidity management. </p>
 
             
         </div>
