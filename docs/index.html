@@ -79,10 +79,9 @@
         </h1>
         <h3 class="text-center title-text">
             The Civ Kit is a blueprint to build their own censorship-resistant and permissionless 
-            global marketplace. Armed with the design of Nostr and the architecture of the Lightning Network, 
-            the framework prioritizes privacy and security through escrowed trades, moderations, 
-            and know-your-peer (KYP) oracles. 
-            The Civ Kit can be made and expanded to support any kind of trading.
+            global marketplace. 
+
+            Check Out Our Github for the code needed to run v1 Civkit marketplace. Read Our Whitepaper to understand the conceptual background of this project.
         </h3>
         <div style="display: flex; justify-content: center; align-items: center; height: 100px;">
             <a href="https://github.com/civkit/paper/blob/main/civ_kit_paper.pdf" >
@@ -150,11 +149,11 @@
             
             <div id="features" class="heading-text">Overview</div>
             <h1 id="civkit">Civkit</h1>
-<p>The Civ Kit combines the Nostr architecture with the Lightning Network, prioritizing “privacy and security through escrowed trades, decentralized identity, moderation, a P2P messaging protocol, and know-your-peer (KYP) oracles for adjudication,” The system aims to support all kinds of trading, including goods and services.</p>
+<p>The Civ Kit combines Nostr, Lightning and PGP to leverage anonymous communication, decentralized identity and instant settlement of trades between any 2 parties</p>
 <h2 id="civkit-node">Civkit Node</h2>
-<p>The CivKit Node represents an experimental NIP-01 Rust relay, complemented by ongoing development of communication gateways for BOLT8 Noise transport and BOLT4 sphinx onion routing. Alongside this, there is a companion client binary designed specifically for development and testing purposes.</p>
+<p>The CivKit Node is split in 3 components. API, Frontend and Chat. Each work together but each can work without the other. This was designed for users to bring their own chat tools and design their own frontends if needed. Build your own, and use our parts.</p>
 <h2 id="staking-credentials">Staking Credentials</h2>
-<p>Rust-based framework implements a reputation system aimed at enhancing the resilience of the Lightning Network against channel jamming. Central to this system is the innovative use of &quot;credentials&quot; issued by network routing hops, attached to each Hashed Time-Locked Contract (HTLC) forward request. These credentials are crucial for a reputation algorithm that rewards or penalizes payment senders, promoting efficient channel liquidity management. </p>
+<p>You only need an NPUB and a lightning wallet to trade. You register pay purchasing a staking credential. This low cost solution prevents cheaters and spam. Your identity is your npub so protect it wisely. You are the master of your reputation in this world. </p>
 
             
         </div>
